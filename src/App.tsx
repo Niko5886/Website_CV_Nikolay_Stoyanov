@@ -9,11 +9,7 @@ const App = () => {
   const [isTyping, setIsTyping] = useState(true);
   
   const codeSnippets = [
-    'const developer = "Nikolay";',
-    'function createWebsite() {',
-    '  return "Schöne Designs";',
-    '}',
-    'console.log("Hallo Welt!");'
+    'console.log("Nikolay Stoyanov - +359897949326");'
   ];
 
   useEffect(() => {
