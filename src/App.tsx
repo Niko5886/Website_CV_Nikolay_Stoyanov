@@ -5,6 +5,8 @@ const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [typedText, setTypedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [displayedCode, setDisplayedCode] = useState('');
+  const [isTyping, setIsTyping] = useState(true);
   
   const codeSnippets = [
     'const developer = "Nikolay";',
@@ -230,17 +232,19 @@ const App = () => {
                   Teamplayer
                 </span>
                 <span className="px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-sm">
-                  Schneller Lerner
+                  Lernbegeistert
                 </span>
               </div>
             </div>
-
-            <div className="relative">
-              <div className="w-80 h-80 mx-auto relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full animate-spin-slow opacity-20"></div>
-                <div className="absolute inset-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-pulse opacity-30"></div>
-                <div className="absolute inset-8 bg-slate-800 rounded-full flex items-center justify-center">
-                  <Code size={80} className="text-cyan-400" />
+            <div className="fixed top-0 right-0 w-full h-full z-0 pointer-events-none overflow-hidden">
+              <div className="absolute top-20 right-4 w-80 h-96 perspective-1000">
+                <div className="animate-slide-rotate w-full h-full">
+                  <div className="font-mono text-sm leading-relaxed text-slate-400/30">
+                    <pre className="whitespace-pre-wrap">
+                      {displayedCode}
+                      {isTyping && <span className="animate-pulse text-green-400/50">|</span>}
+                    </pre>
+                  </div>
                 </div>
               </div>
             </div>
