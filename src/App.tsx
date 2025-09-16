@@ -582,10 +582,10 @@ const App = () => {
             {/* alfatraining */}
             <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-8 hover:border-cyan-500/50 transition-all duration-300">
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-2xl font-bold text-cyan-400">alfatraining</h3>
+                <h3 className="text-2xl font-bold text-cyan-400">Alfatraining - Deutschland </h3>
                 <div className="flex items-center text-gray-400">
                   <Calendar size={16} className="mr-2" />
-                  <span className="text-base">2024</span>
+                  <span className="text-base">2024 - 2025</span>
                 </div>
               </div>
               <h4 className="text-lg text-white mb-6">Frontend-Entwickler Zertifikat</h4>
@@ -611,10 +611,10 @@ const App = () => {
             {/* SoftUni */}
             <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-8 hover:border-cyan-500/50 transition-all duration-300">
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-2xl font-bold text-cyan-400">SoftUni</h3>
+                <h3 className="text-2xl font-bold text-cyan-400">SoftUni - Bulgarien</h3>
                 <div className="flex items-center text-gray-400">
                   <Calendar size={16} className="mr-2" />
-                  <span className="text-base">2023-2024</span>
+                  <span className="text-base">2025 - seit heute</span>
                 </div>
               </div>
               <h4 className="text-lg text-white mb-6">Programmierung Grundlagen</h4>
