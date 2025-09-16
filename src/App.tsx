@@ -230,10 +230,13 @@ const App = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                Ich bin ein leidenschaftlicher Junior Frontend-Entwickler mit einer starken Grundlage in modernen Webtechnologien. Meine Reise in die Programmierung begann mit Neugier und hat sich zu einer echten Leidenschaft für die Erstellung schöner, funktionaler Webanwendungen entwickelt.
+                Motivierter und ehrgeiziger junger Spezialist mit Kenntnissen in Programmierung und Datenanalyse, die ich durch Intensivkurse bei alfatraining in Deutschland und SoftUni Bulgarien erworben habe. Ich habe eine Fachausbildung in Front-End-Entwicklung und Programmierung mit HTML, CSS, JavaScript, React, Java und Python mit hervorragenden Ergebnissen abgeschlossen, was mir eine solide Grundlage für die Arbeit mit Daten, Prozessen und Automatisierung verschafft hat.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                Ich spezialisiere mich auf React, JavaScript und responsive Design und strebe stets danach, sauberen, effizienten Code zu schreiben, der außergewöhnliche Benutzererfahrungen bietet. Ich lerne kontinuierlich neue Technologien und Best Practices, um in der sich schnell entwickelnden Welt der Webentwicklung auf dem neuesten Stand zu bleiben.
+                Mein ständiger Wunsch zu lernen und mich weiterzuentwickeln wird durch meine Kurse „AI Integrations for Developers", „Programming Fundamentals with JavaScript" und „Programming Fundamentals" bei SoftUni unterstützt, und derzeit lerne ich auch bei Vibe Coding.
+              </p>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                Ich bin in der Lage, selbstständig zu arbeiten, neue Technologien schnell zu erlernen und habe eine starke Affinität zur Lösung komplexer Probleme. Ich suche nach einer Möglichkeit, mein Wissen im Bereich BI und Automatisierung einzusetzen, um die Entwicklung Ihres Unternehmens zu unterstützen.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <span className="px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-sm">
