@@ -579,34 +579,67 @@ const App = () => {
           </div>
 
           <div className="space-y-8">
-            {education.map((edu, index) => (
-              <div
-                key={index}
-                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-8 hover:border-cyan-500/50 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg hover:shadow-cyan-500/10"
-              >
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <div>
-                    <h3 className="text-2xl font-bold text-cyan-400 mb-2">{edu.institution}</h3>
-                    <h4 className="text-xl text-gray-300 mb-2">{edu.degree}</h4>
-                  </div>
-                  <div className="flex items-center text-gray-400">
-                    <Calendar size={20} className="mr-2" />
-                    <span>{edu.period}</span>
-                  </div>
+            {/* alfatraining */}
+            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-8 hover:border-cyan-500/50 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg hover:shadow-cyan-500/10">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
+                <div>
+                  <h3 className="text-2xl font-bold text-cyan-400 mb-2">alfatraining</h3>
+                  <h4 className="text-xl text-gray-300 mb-4">Frontend-Entwickler Zertifikat</h4>
                 </div>
-                <p className="text-gray-300 mb-4 leading-relaxed">{edu.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {edu.skills.map((skill, skillIndex) => (
-                    <span
-                      key={skillIndex}
-                      className="px-3 py-1 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-sm text-cyan-300"
-                    >
-                      {skill}
-                    </span>
-                  ))}
+                <div className="flex items-center text-gray-400">
+                  <Calendar size={20} className="mr-2" />
+                  <span>2024</span>
                 </div>
               </div>
-            ))}
+              <p className="text-gray-300 mb-6 leading-relaxed">
+                Intensive Ausbildung in modernen Frontend-Technologien einschließlich React, JavaScript und responsive Webdesign.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-sm text-cyan-300">
+                  React
+                </span>
+                <span className="px-3 py-1 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-sm text-cyan-300">
+                  JavaScript ES6+
+                </span>
+                <span className="px-3 py-1 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-sm text-cyan-300">
+                  HTML5/CSS3
+                </span>
+                <span className="px-3 py-1 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-sm text-cyan-300">
+                  Responsive Design
+                </span>
+              </div>
+            </div>
+
+            {/* SoftUni */}
+            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-8 hover:border-cyan-500/50 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg hover:shadow-cyan-500/10">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
+                <div>
+                  <h3 className="text-2xl font-bold text-cyan-400 mb-2">SoftUni</h3>
+                  <h4 className="text-xl text-gray-300 mb-4">Programmierung Grundlagen</h4>
+                </div>
+                <div className="flex items-center text-gray-400">
+                  <Calendar size={20} className="mr-2" />
+                  <span>2023-2024</span>
+                </div>
+              </div>
+              <p className="text-gray-300 mb-6 leading-relaxed">
+                Umfassende Grundlagen der Programmierung mit Fokus auf Webentwicklung und Softwareentwicklungsprinzipien.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-sm text-cyan-300">
+                  Programmierlogik
+                </span>
+                <span className="px-3 py-1 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-sm text-cyan-300">
+                  Algorithmen
+                </span>
+                <span className="px-3 py-1 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-sm text-cyan-300">
+                  Datenstrukturen
+                </span>
+                <span className="px-3 py-1 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-sm text-cyan-300">
+                  Problemlösung
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
