@@ -250,15 +250,44 @@ const App = () => {
                 </span>
               </div>
             </div>
-            <div className="fixed top-0 right-0 w-full h-full z-0 pointer-events-none overflow-hidden">
-              <div className="absolute top-20 right-4 w-80 h-96 perspective-1000">
-                <div className="animate-slide-rotate w-full h-full">
-                  <div className="font-mono text-sm leading-relaxed text-slate-400/30">
-                    <pre className="whitespace-pre-wrap">
-                      {displayedCode}
-                      {isTyping && <span className="animate-pulse text-green-400/50">|</span>}
-                    </pre>
+            <div className="grid grid-cols-2 gap-6">
+              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105">
+                <div className="flex flex-col items-center text-center">
+                  <div className="p-4 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg mb-4">
+                    <Globe size={32} className="text-white" />
                   </div>
+                  <h3 className="text-lg font-semibold text-blue-400 mb-2">Web Design</h3>
+                  <p className="text-sm text-gray-400">HTML5, CSS3, Responsive Design</p>
+                </div>
+              </div>
+
+              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-green-500/50 transition-all duration-300 transform hover:scale-105">
+                <div className="flex flex-col items-center text-center">
+                  <div className="p-4 bg-gradient-to-r from-green-500 to-green-600 rounded-lg mb-4">
+                    <Code size={32} className="text-white" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-green-400 mb-2">JavaScript</h3>
+                  <p className="text-sm text-gray-400">DOM, AJAX, NodeJS, NPM</p>
+                </div>
+              </div>
+
+              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300 transform hover:scale-105">
+                <div className="flex flex-col items-center text-center">
+                  <div className="p-4 bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg mb-4">
+                    <Code size={32} className="text-white" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-purple-400 mb-2">React</h3>
+                  <p className="text-sm text-gray-400">Components, Hooks, Redux</p>
+                </div>
+              </div>
+
+              <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-orange-500/50 transition-all duration-300 transform hover:scale-105">
+                <div className="flex flex-col items-center text-center">
+                  <div className="p-4 bg-gradient-to-r from-orange-500 to-orange-600 rounded-lg mb-4">
+                    <Database size={32} className="text-white" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-orange-400 mb-2">Data & AI</h3>
+                  <p className="text-sm text-gray-400">Python, Java, AI Integration</p>
                 </div>
               </div>
             </div>
