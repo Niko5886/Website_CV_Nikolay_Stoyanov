@@ -356,7 +356,7 @@ const App = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-cyan-400">E-Mail</h3>
-                  <p className="text-gray-300">nikolay.stoyanov@email.com</p>
+                  <p className="text-gray-300">lobido1988@gmail.com</p>
                 </div>
               </div>
 
@@ -366,7 +366,7 @@ const App = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-cyan-400">Telefon</h3>
-                  <p className="text-gray-300">+359 888 123 456</p>
+                  <p className="text-gray-300">0897949326</p>
                 </div>
               </div>
 
@@ -376,7 +376,7 @@ const App = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-cyan-400">Standort</h3>
-                  <p className="text-gray-300">Sofia, Bulgarien</p>
+                  <p className="text-gray-300">Ruse 7016, ul. Klisura 19</p>
                 </div>
               </div>
 
