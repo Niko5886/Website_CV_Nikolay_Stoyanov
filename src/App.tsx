@@ -473,6 +473,87 @@ const App = () => {
               </div>
             </div>
           </div>
+
+          {/* Second Row - Two additional sections */}
+          <div className="grid md:grid-cols-2 gap-8 mt-8">
+            {/* Tools & Entwicklung */}
+            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-indigo-500/50 transition-all duration-300 transform hover:scale-105">
+              <h3 className="text-xl font-bold text-white mb-6">Tools & Entwicklung</h3>
+              <div className="space-y-4">
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>Git & GitHub</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-indigo-500 transition-all duration-1000 ease-out" style={{ width: '85%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>VS Code</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-indigo-500 transition-all duration-1000 ease-out" style={{ width: '90%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>Webpack & Vite</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-indigo-500 transition-all duration-1000 ease-out" style={{ width: '70%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>NPM & Package Management</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-indigo-500 transition-all duration-1000 ease-out" style={{ width: '80%' }}></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Design & UI/UX */}
+            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-pink-500/50 transition-all duration-300 transform hover:scale-105">
+              <h3 className="text-xl font-bold text-white mb-6">Design & UI/UX</h3>
+              <div className="space-y-4">
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>Responsive Design</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-pink-500 transition-all duration-1000 ease-out" style={{ width: '85%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>Tailwind CSS</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-pink-500 transition-all duration-1000 ease-out" style={{ width: '80%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>UI/UX Principles</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-pink-500 transition-all duration-1000 ease-out" style={{ width: '75%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>Cross-browser Compatibility</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-pink-500 transition-all duration-1000 ease-out" style={{ width: '80%' }}></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
