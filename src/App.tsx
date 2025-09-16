@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Code, Palette, Database, Globe, Mail, Phone, MapPin, Calendar, Award, ExternalLink, Github, Linkedin } from 'lucide-react';
+import { Menu, X, Code, Palette, Database, Globe, Mail, Phone, MapPin, Calendar, Award, ExternalLink, Github, Linkedin, ArrowUp } from 'lucide-react';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,6 +40,10 @@ const App = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
     setIsMenuOpen(false);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const skills = [
@@ -209,6 +213,17 @@ const App = () => {
       {/* About Section */}
       <section id="about" className="py-20 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Back to Top Button */}
+          <div className="flex justify-end mb-8">
+            <button
+              onClick={scrollToTop}
+              className="p-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full hover:from-cyan-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-cyan-500/25 group"
+              title="Zurück nach oben"
+            >
+              <ArrowUp size={20} className="text-white group-hover:animate-bounce" />
+            </button>
+          </div>
+
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
               Über mich
@@ -255,6 +270,17 @@ const App = () => {
       {/* Skills Section */}
       <section id="skills" className="py-20 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Back to Top Button */}
+          <div className="flex justify-end mb-8">
+            <button
+              onClick={scrollToTop}
+              className="p-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full hover:from-cyan-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-cyan-500/25 group"
+              title="Zurück nach oben"
+            >
+              <ArrowUp size={20} className="text-white group-hover:animate-bounce" />
+            </button>
+          </div>
+
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
               Meine Fähigkeiten
@@ -299,6 +325,17 @@ const App = () => {
       {/* Education Section */}
       <section id="education" className="py-20 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Back to Top Button */}
+          <div className="flex justify-end mb-8">
+            <button
+              onClick={scrollToTop}
+              className="p-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full hover:from-cyan-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-cyan-500/25 group"
+              title="Zurück nach oben"
+            >
+              <ArrowUp size={20} className="text-white group-hover:animate-bounce" />
+            </button>
+          </div>
+
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
               Bildung
@@ -342,6 +379,17 @@ const App = () => {
       {/* Contact Section */}
       <section id="contact" className="py-20 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Back to Top Button */}
+          <div className="flex justify-end mb-8">
+            <button
+              onClick={scrollToTop}
+              className="p-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full hover:from-cyan-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-cyan-500/25 group"
+              title="Zurück nach oben"
+            >
+              <ArrowUp size={20} className="text-white group-hover:animate-bounce" />
+            </button>
+          </div>
+
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
               Kontaktiere mich
