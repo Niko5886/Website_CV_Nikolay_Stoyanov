@@ -316,36 +316,162 @@ const App = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto rounded-full"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {skills.map((skill, index) => {
-              const Icon = skill.icon;
-              return (
-                <div
-                  key={skill.name}
-                  className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/10"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <div className="flex items-center mb-4">
-                    <div className={`p-3 rounded-lg bg-gradient-to-r ${skill.color} mr-4`}>
-                      <Icon size={24} className="text-white" />
-                    </div>
-                    <h3 className="text-xl font-semibold">{skill.name}</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Frontend Development */}
+            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105">
+              <h3 className="text-xl font-bold text-white mb-6">Frontend-Entwicklung</h3>
+              <div className="space-y-4">
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>HTML5</span>
                   </div>
-                  <div className="mb-2">
-                    <div className="flex justify-between text-sm text-gray-400 mb-1">
-                      <span>Fortschritt</span>
-                      <span>{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div
-                        className={`h-2 rounded-full bg-gradient-to-r ${skill.color} transition-all duration-1000 ease-out`}
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-blue-500 transition-all duration-1000 ease-out" style={{ width: '90%' }}></div>
                   </div>
                 </div>
-              );
-            })}
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>CSS3 & Responsive</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-blue-500 transition-all duration-1000 ease-out" style={{ width: '85%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>Flexbox & Grid</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-blue-500 transition-all duration-1000 ease-out" style={{ width: '80%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>One-page Sites</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-blue-500 transition-all duration-1000 ease-out" style={{ width: '85%' }}></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* JavaScript */}
+            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-yellow-500/50 transition-all duration-300 transform hover:scale-105">
+              <h3 className="text-xl font-bold text-white mb-6">JavaScript</h3>
+              <div className="space-y-4">
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>DOM Manipulation</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-yellow-500 transition-all duration-1000 ease-out" style={{ width: '80%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>AJAX & Fetch</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-yellow-500 transition-all duration-1000 ease-out" style={{ width: '75%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>NodeJS & NPM</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-yellow-500 transition-all duration-1000 ease-out" style={{ width: '70%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>Async & Promises</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-yellow-500 transition-all duration-1000 ease-out" style={{ width: '75%' }}></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Libraries & Frameworks */}
+            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all duration-300 transform hover:scale-105">
+              <h3 className="text-xl font-bold text-white mb-6">Bibliotheken & Frameworks</h3>
+              <div className="space-y-4">
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>React</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-cyan-500 transition-all duration-1000 ease-out" style={{ width: '75%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>Redux Toolkit</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-cyan-500 transition-all duration-1000 ease-out" style={{ width: '65%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>VueJS</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-cyan-500 transition-all duration-1000 ease-out" style={{ width: '60%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>jQuery</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-cyan-500 transition-all duration-1000 ease-out" style={{ width: '70%' }}></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Programming */}
+            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300 transform hover:scale-105">
+              <h3 className="text-xl font-bold text-white mb-6">Programmierung</h3>
+              <div className="space-y-4">
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>Python</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-green-500 transition-all duration-1000 ease-out" style={{ width: '70%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>Python GUI</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-green-500 transition-all duration-1000 ease-out" style={{ width: '65%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>Java OOP</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-orange-500 transition-all duration-1000 ease-out" style={{ width: '60%' }}></div>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex justify-between text-sm text-gray-300 mb-2">
+                    <span>SQL & MySQL</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2">
+                    <div className="h-2 rounded-full bg-purple-500 transition-all duration-1000 ease-out" style={{ width: '65%' }}></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
