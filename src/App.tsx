@@ -578,60 +578,60 @@ const App = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto rounded-full"></div>
           </div>
 
-          <div className="space-y-8">
-            {/* alfatraining - Deutschland */}
-            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all duration-300">
-              <div className="flex justify-between items-start mb-3">
-                <h3 className="text-xl font-bold text-cyan-400">alfatraining</h3>
+          <div className="space-y-6">
+            {/* alfatraining */}
+            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-8 hover:border-cyan-500/50 transition-all duration-300">
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="text-2xl font-bold text-cyan-400">alfatraining</h3>
                 <div className="flex items-center text-gray-400">
-                  <Calendar size={14} className="mr-1" />
-                  <span className="text-sm">2024</span>
+                  <Calendar size={16} className="mr-2" />
+                  <span className="text-base">2024</span>
                 </div>
               </div>
-              <h4 className="text-base text-white mb-4">Frontend-Entwickler Zertifikat</h4>
-              <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+              <h4 className="text-lg text-white mb-6">Frontend-Entwickler Zertifikat</h4>
+              <p className="text-gray-300 mb-6 text-base leading-relaxed">
                 Intensive Ausbildung in modernen Frontend-Technologien einschließlich React, JavaScript und responsive Webdesign.
               </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 rounded text-xs text-cyan-300">
+              <div className="flex flex-wrap gap-3">
+                <span className="px-4 py-2 bg-cyan-500/20 border border-cyan-500/30 rounded-md text-sm text-cyan-300">
                   React
                 </span>
-                <span className="px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 rounded text-xs text-cyan-300">
+                <span className="px-4 py-2 bg-cyan-500/20 border border-cyan-500/30 rounded-md text-sm text-cyan-300">
                   JavaScript ES6+
                 </span>
-                <span className="px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 rounded text-xs text-cyan-300">
+                <span className="px-4 py-2 bg-cyan-500/20 border border-cyan-500/30 rounded-md text-sm text-cyan-300">
                   HTML5/CSS3
                 </span>
-                <span className="px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 rounded text-xs text-cyan-300">
+                <span className="px-4 py-2 bg-cyan-500/20 border border-cyan-500/30 rounded-md text-sm text-cyan-300">
                   Responsive Design
                 </span>
               </div>
             </div>
 
-            {/* SoftUni - Bulgarien */}
-            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all duration-300">
-              <div className="flex justify-between items-start mb-3">
-                <h3 className="text-xl font-bold text-cyan-400">SoftUni</h3>
+            {/* SoftUni */}
+            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-lg p-8 hover:border-cyan-500/50 transition-all duration-300">
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="text-2xl font-bold text-cyan-400">SoftUni</h3>
                 <div className="flex items-center text-gray-400">
-                  <Calendar size={14} className="mr-1" />
-                  <span className="text-sm">2023-2024</span>
+                  <Calendar size={16} className="mr-2" />
+                  <span className="text-base">2023-2024</span>
                 </div>
               </div>
-              <h4 className="text-base text-white mb-4">Programmierung Grundlagen</h4>
-              <p className="text-gray-300 mb-4 text-sm leading-relaxed">
+              <h4 className="text-lg text-white mb-6">Programmierung Grundlagen</h4>
+              <p className="text-gray-300 mb-6 text-base leading-relaxed">
                 Umfassende Grundlagen der Programmierung mit Fokus auf Webentwicklung und Softwareentwicklungsprinzipien.
               </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 rounded text-xs text-cyan-300">
+              <div className="flex flex-wrap gap-3">
+                <span className="px-4 py-2 bg-cyan-500/20 border border-cyan-500/30 rounded-md text-sm text-cyan-300">
                   Programmierlogik
                 </span>
-                <span className="px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 rounded text-xs text-cyan-300">
+                <span className="px-4 py-2 bg-cyan-500/20 border border-cyan-500/30 rounded-md text-sm text-cyan-300">
                   Algorithmen
                 </span>
-                <span className="px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 rounded text-xs text-cyan-300">
+                <span className="px-4 py-2 bg-cyan-500/20 border border-cyan-500/30 rounded-md text-sm text-cyan-300">
                   Datenstrukturen
                 </span>
-                <span className="px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 rounded text-xs text-cyan-300">
+                <span className="px-4 py-2 bg-cyan-500/20 border border-cyan-500/30 rounded-md text-sm text-cyan-300">
                   Problemlösung
                 </span>
               </div>
