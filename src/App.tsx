@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Code, Palette, Database, Globe, Mail, Phone, MapPin, Calendar, Award, ExternalLink, Github, Linkedin, ArrowUp } from 'lucide-react';
+import { Menu, X, Code, Palette, Database, Globe, Mail, Phone, MapPin, Calendar, Award, ExternalLink, Github, Linkedin, ArrowUp, Download, FileText } from 'lucide-react';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -65,6 +65,59 @@ const App = () => {
       period: '2023-2024',
       description: 'Umfassende Grundlagen der Programmierung mit Fokus auf Webentwicklung und Softwareentwicklungsprinzipien.',
       skills: ['Programmierlogik', 'Algorithmen', 'Datenstrukturen', 'Problemlösung']
+    }
+  ];
+
+  const certificates = [
+    {
+      id: 1,
+      title: 'Webdesign Zertifikat',
+      issuer: 'Bildungsanbieter',
+      date: '19.08.2024',
+      number: '137173',
+      description: 'Umfassende Ausbildung in modernem Webdesign, HTML5, CSS3 und responsive Design-Prinzipien.',
+      file: '/certificates/Zertifikat_137173_Webdesign_20240819.pdf',
+      color: 'from-blue-500 to-cyan-500'
+    },
+    {
+      id: 2,
+      title: 'JavaScript & Ajax Zertifikat',
+      issuer: 'Bildungsanbieter',
+      date: '14.10.2024',
+      number: '142068',
+      description: 'Fortgeschrittene JavaScript-Programmierung und asynchrone Webentwicklung mit Ajax.',
+      file: '/certificates/Zertifikat_142068_Javascript_Ajax_(8)_20241014.pdf',
+      color: 'from-yellow-500 to-orange-500'
+    },
+    {
+      id: 3,
+      title: 'JavaScript Bibliothek Zertifikat',
+      issuer: 'Bildungsanbieter',
+      date: '09.12.2024',
+      number: '145009',
+      description: 'Spezialisierung in JavaScript-Bibliotheken und modernen Frontend-Frameworks.',
+      file: '/certificates/Zertifikat_145009_JavaScript_Bibliothek_20241209.pdf',
+      color: 'from-green-500 to-emerald-500'
+    },
+    {
+      id: 4,
+      title: 'Java Zertifikat',
+      issuer: 'Bildungsanbieter',
+      date: '13.01.2025',
+      number: '150166',
+      description: 'Objektorientierte Programmierung mit Java und Enterprise-Anwendungsentwicklung.',
+      file: '/certificates/Zertifikat_150166_JAVA_20250113.pdf',
+      color: 'from-red-500 to-pink-500'
+    },
+    {
+      id: 5,
+      title: 'Python Zertifikat',
+      issuer: 'Bildungsanbieter',
+      date: '10.03.2025',
+      number: '153269',
+      description: 'Python-Programmierung für Datenanalyse, Webentwicklung und Automatisierung.',
+      file: '/certificates/Zertifikat_153269_Python_20250310.pdf',
+      color: 'from-purple-500 to-indigo-500'
     }
   ];
 
@@ -637,6 +690,87 @@ const App = () => {
                   Problemlösung
                 </span>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Zertifikate Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-800 mb-4">Zertifikate</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Meine erworbenen Qualifikationen und Zertifizierungen in verschiedenen Technologiebereichen
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {certificates.map((cert) => (
+              <div
+                key={cert.id}
+                className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group"
+              >
+                <div className={`h-32 bg-gradient-to-br ${cert.color} relative overflow-hidden`}>
+                  <div className="absolute inset-0 bg-black bg-opacity-10"></div>
+                  <div className="absolute top-4 right-4">
+                    <Award className="w-8 h-8 text-white opacity-80" />
+                  </div>
+                  <div className="absolute bottom-4 left-4">
+                    <div className="text-white">
+                      <div className="text-sm opacity-90">Zertifikat Nr.</div>
+                      <div className="text-lg font-bold">{cert.number}</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
+                    {cert.title}
+                  </h3>
+                  
+                  <div className="flex items-center text-gray-600 mb-3">
+                    <Calendar className="w-4 h-4 mr-2" />
+                    <span className="text-sm">{cert.date}</span>
+                  </div>
+
+                  <div className="flex items-center text-gray-600 mb-4">
+                    <Award className="w-4 h-4 mr-2" />
+                    <span className="text-sm">{cert.issuer}</span>
+                  </div>
+
+                  <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+                    {cert.description}
+                  </p>
+
+                  <div className="flex gap-3">
+                    <a
+                      href={cert.file}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center justify-center gap-2 text-sm font-medium"
+                    >
+                      <FileText className="w-4 h-4" />
+                      Ansehen
+                    </a>
+                    <a
+                      href={cert.file}
+                      download
+                      className="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-lg transition-colors duration-300 flex items-center justify-center"
+                      title="Zertifikat herunterladen"
+                    >
+                      <Download className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-6 py-3 rounded-full">
+              <Award className="w-5 h-5" />
+              <span className="font-medium">Kontinuierliche Weiterbildung in modernen Technologien</span>
             </div>
           </div>
         </div>
