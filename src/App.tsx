@@ -52,13 +52,13 @@ const App = () => {
   const certificates = [
     {
       id: 1,
-      title: 'Webdesign',
+      title: 'Webdesign mit HTML, CSS und Dreamweaver',
       issuer: 'alfatraining',
-      date: '19.08.2024',
+      date: '11.10.2024',
       number: '137173',
-      description: 'Webdesign und Frontend-Entwicklung',
+      description: 'Webdesign',
       note: '8 Wochen Vollzeitunterricht',
-      image: '/src/assets/certificates/Screenshot S1 copy.png',
+      image: '/src/assets/Screenshot 11.png',
       color: 'from-orange-500 to-red-500'
     },
     {
@@ -74,10 +74,8 @@ const App = () => {
     },
     {
       id: 3,
-      title: 'JavaScript Bibliothek',
+      title: 'JavaScript & AJAX',
       issuer: 'alfatraining',
-      date: '09.12.2024',
-      number: '145009',
       description: 'JavaScript-Bibliotheken und Frameworks',
       note: '8 Wochen Vollzeitunterricht',
       image: '/src/assets/certificates/Screenshot S1 copy.png',
@@ -101,20 +99,33 @@ const App = () => {
       date: '11.10.2024',
       institution: 'alfatraining',
       degree: 'Frontend-Entwickler Zertifikat',
-      period: '2024',
-      description: 'Umfassende Grundlagen der Programmierung mit Fokus auf Webentwicklung und Softwareentwicklungsprinzipien.',
+      date: '14.10.2024',
       number: '142068',
+      description: 'Fortgeschrittene JavaScript-Programmierung',
+      note: 'AJAX-Technologien',
+      image: '/src/assets/Screenshot 11.png',
       color: 'from-green-500 to-teal-500'
     },
     {
       id: 6,
-      title: 'Python Programmierung',
+      title: 'Java OOP',
+      issuer: 'alfatraining',
+      date: '13.01.2025',
+      number: '145009',
+      description: 'Spezialisierung auf JavaScript-Frameworks',
+      note: 'mit Java',
+      image: '/src/assets/Screenshot 11.png',
+      color: 'from-purple-500 to-indigo-500'
+    },
+    {
+      id: 5,
+      title: 'Python',
       issuer: 'alfatraining',
       date: '10.03.2025',
       number: '153269',
-      description: 'Programmierung mit Python',
-      note: '4 Wochen Vollzeitunterricht',
-      image: '/src/assets/certificates/Screenshot S2 copy.png',
+      description: 'Python-Programmierung und Datenanalyse',
+      note: 'Automation und Scripting',
+      image: '/src/assets/Screenshot 11.png',
       color: 'from-purple-500 to-indigo-500'
     }
   ];
