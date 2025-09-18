@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Code, Palette, Database, Globe, Mail, Phone, MapPin, Calendar, Award, ExternalLink, Github, Linkedin, ArrowUp, Download, FileText } from 'lucide-react';
+import { Menu, X, Code, Palette, Database, Globe, Mail, Phone, MapPin, Calendar, Award, ExternalLink, Github, Linkedin, ArrowUp, Download, FileText, GraduationCap } from 'lucide-react';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -248,9 +248,12 @@ const App = () => {
             <button
               onClick={() => scrollToSection('about')}
               className="px-8 py-3 border border-cyan-500 rounded-full font-semibold hover:bg-cyan-500/10 transition-all duration-300 transform hover:scale-105"
+            >
+              Mehr erfahren
+            </button>
             <a href="#certificates" className="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-colors">
               Zertifikate
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -903,7 +906,7 @@ const App = () => {
                     <div className="flex items-center gap-2 mb-2">
                       <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${cert.color}`}></div>
                       <p className="text-blue-600 font-semibold text-sm">
-                    {cert.description}
+                        {cert.description}
                       </p>
                     </div>
                     <p className="text-gray-500 text-xs pl-5">
