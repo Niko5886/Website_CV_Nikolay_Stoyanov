@@ -46,25 +46,36 @@ const App = () => {
     { name: 'HTML5', level: 90, icon: Code, color: 'from-orange-400 to-red-500' },
     { name: 'CSS3', level: 85, icon: Palette, color: 'from-blue-400 to-blue-600' },
     { name: 'JavaScript', level: 80, icon: Code, color: 'from-yellow-400 to-yellow-600' },
-    { name: 'React', level: 75, icon: Code, color: 'from-cyan-400 to-blue-500' },
+      title: 'JavaScript Bibliothek',
     { name: 'Node.js', level: 70, icon: Database, color: 'from-green-400 to-green-600' },
-    { name: 'Git', level: 85, icon: Code, color: 'from-gray-400 to-gray-600' }
-  ];
-
-  const education = [
-    {
+      date: '09.12.2024',
+      number: '145009',
+      description: 'JavaScript-Bibliotheken und Frameworks',
+      note: '8 Wochen Vollzeitunterricht',
+      date: '11.10.2024',
       institution: 'alfatraining',
       degree: 'Frontend-Entwickler Zertifikat',
       period: '2024',
-      description: 'Intensive Ausbildung in modernen Frontend-Technologien einschließlich React, JavaScript und responsive Webdesign.',
-      skills: ['React', 'JavaScript ES6+', 'HTML5/CSS3', 'Responsive Design']
+      image: '/src/assets/certificates/Screenshot S1 copy.png',
+      title: 'Java-Entwickler',
     },
-    {
+      date: '13.01.2025',
       institution: 'SoftUni',
       degree: 'Programmierung Grundlagen',
-      period: '2023-2024',
+      note: '8 Wochen Vollzeitunterricht',
       description: 'Umfassende Grundlagen der Programmierung mit Fokus auf Webentwicklung und Softwareentwicklungsprinzipien.',
-      skills: ['Programmierlogik', 'Algorithmen', 'Datenstrukturen', 'Problemlösung']
+      number: '142068',
+    },
+    {
+      id: 5,
+      title: 'Python Programmierung',
+      issuer: 'alfatraining',
+      date: '10.03.2025',
+      number: '153269',
+      description: 'Programmierung mit Python',
+      note: '4 Wochen Vollzeitunterricht',
+      image: '/src/assets/certificates/Screenshot S2 copy.png',
+      color: 'from-purple-500 to-indigo-500'
     }
   ];
 
@@ -1006,7 +1017,7 @@ const App = () => {
 
       {/* Footer */}
       <footer className="py-8 border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Meine Zertifikate</h2>
           <p className="text-gray-400">
             © 2024 Nikolay Stoyanov. Alle Rechte vorbehalten.
           </p>
