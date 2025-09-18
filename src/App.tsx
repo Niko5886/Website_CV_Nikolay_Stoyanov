@@ -7,6 +7,7 @@ const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayedCode, setDisplayedCode] = useState('');
   const [isTyping, setIsTyping] = useState(true);
+  const [isWinking, setIsWinking] = useState(false);
   
   const codeSnippets = [
     'console.log("Nikolay Stoyanov - +359897949326");'
@@ -29,6 +30,16 @@ const App = () => {
 
     return () => clearInterval(interval);
   }, [typedText, currentIndex]);
+
+  // Robot winking animation every 30 seconds
+  useEffect(() => {
+    const winkInterval = setInterval(() => {
+      setIsWinking(true);
+      setTimeout(() => setIsWinking(false), 300);
+    }, 30000);
+
+    return () => clearInterval(winkInterval);
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -98,8 +109,75 @@ const App = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-              NS
+            <div className="flex items-center">
+              {/* Robot SVG */}
+              <svg width="48" height="48" viewBox="0 0 100 100" className="mr-2">
+                {/* Robot Head */}
+                <ellipse cx="50" cy="35" rx="25" ry="20" fill="url(#robotGradient)" stroke="#4c1d95" strokeWidth="2"/>
+                
+                {/* Robot Eyes */}
+                <rect x="40" y="28" width="8" height="6" rx="2" fill="#1e1b4b"/>
+                <rect x="52" y="28" width="8" height="6" rx="2" fill="#1e1b4b"/>
+                
+                {/* Eye pixels - left eye */}
+                <rect x="42" y="30" width="2" height="2" fill="#fbbf24"/>
+                <rect x="45" y="30" width="2" height="2" fill="#fbbf24"/>
+                
+                {/* Eye pixels - right eye (with winking animation) */}
+                <rect x="54" y="30" width="2" height="2" fill="#fbbf24" className={isWinking ? 'opacity-0' : 'opacity-100'} style={{transition: 'opacity 0.1s'}}/>
+                <rect x="57" y="30" width="2" height="2" fill="#fbbf24" className={isWinking ? 'opacity-0' : 'opacity-100'} style={{transition: 'opacity 0.1s'}}/>
+                
+                {/* Winking line for right eye */}
+                <line x1="54" y1="31" x2="59" y2="31" stroke="#fbbf24" strokeWidth="2" className={isWinking ? 'opacity-100' : 'opacity-0'} style={{transition: 'opacity 0.1s'}}/>
+                
+                {/* Robot Mouth */}
+                <rect x="46" y="38" width="2" height="2" fill="#fbbf24"/>
+                <rect x="48" y="40" width="2" height="2" fill="#fbbf24"/>
+                <rect x="50" y="40" width="2" height="2" fill="#fbbf24"/>
+                <rect x="52" y="38" width="2" height="2" fill="#fbbf24"/>
+                
+                {/* Robot Ears/Antennas */}
+                <circle cx="30" cy="25" r="6" fill="url(#robotGradient)" stroke="#4c1d95" strokeWidth="2"/>
+                <circle cx="70" cy="25" r="6" fill="url(#robotGradient)" stroke="#4c1d95" strokeWidth="2"/>
+                
+                {/* Ear details */}
+                <rect x="28" y="23" width="4" height="1" fill="#6366f1"/>
+                <rect x="28" y="25" width="4" height="1" fill="#6366f1"/>
+                <rect x="28" y="27" width="4" height="1" fill="#6366f1"/>
+                <rect x="68" y="23" width="4" height="1" fill="#6366f1"/>
+                <rect x="68" y="25" width="4" height="1" fill="#6366f1"/>
+                <rect x="68" y="27" width="4" height="1" fill="#6366f1"/>
+                
+                {/* Robot Body */}
+                <ellipse cx="50" cy="65" rx="20" ry="25" fill="url(#robotBodyGradient)" stroke="#4c1d95" strokeWidth="2"/>
+                
+                {/* Body details */}
+                <rect x="45" y="55" width="10" height="8" rx="2" fill="#6366f1"/>
+                <circle cx="50" cy="75" r="3" fill="#fbbf24"/>
+                
+                {/* Robot Arms */}
+                <ellipse cx="25" cy="60" rx="8" ry="15" fill="url(#robotGradient)" stroke="#4c1d95" strokeWidth="2"/>
+                <ellipse cx="75" cy="60" rx="8" ry="15" fill="url(#robotGradient)" stroke="#4c1d95" strokeWidth="2"/>
+                
+                {/* Arm joints */}
+                <circle cx="25" cy="55" r="3" fill="#fbbf24"/>
+                <circle cx="75" cy="55" r="3" fill="#fbbf24"/>
+                
+                {/* Gradients */}
+                <defs>
+                  <linearGradient id="robotGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#e2e8f0"/>
+                    <stop offset="100%" stopColor="#cbd5e1"/>
+                  </linearGradient>
+                  <linearGradient id="robotBodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#8b5cf6"/>
+                    <stop offset="100%" stopColor="#6366f1"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                N.Stoyanov
+              </span>
             </div>
             
             {/* Desktop Menu */}
