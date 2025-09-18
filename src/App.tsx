@@ -752,15 +752,6 @@ const App = () => {
                   Responsive Design
                 </span>
               </div>
-              <a
-                href="/certificates/Zertifikat_137173_Webdesign_20240819.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
-              >
-                <span className="mr-2">Zertifikat ansehen</span>
-                <ExternalLink size={16} />
-              </a>
             </div>
 
             {/* JavaScript Certificate */}
