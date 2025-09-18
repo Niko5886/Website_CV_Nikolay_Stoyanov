@@ -786,15 +786,6 @@ const App = () => {
                   DOM Manipulation
                 </span>
               </div>
-              <a
-                href="/certificates/Zertifikat_142068_Javascript_Ajax_(8)_20241014.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
-              >
-                <span className="mr-2">Zertifikat ansehen</span>
-                <ExternalLink size={16} />
-              </a>
             </div>
 
             {/* JavaScript Libraries Certificate */}
