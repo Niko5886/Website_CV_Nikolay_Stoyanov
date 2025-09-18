@@ -46,28 +46,68 @@ const App = () => {
     { name: 'HTML5', level: 90, icon: Code, color: 'from-orange-400 to-red-500' },
     { name: 'CSS3', level: 85, icon: Palette, color: 'from-blue-400 to-blue-600' },
     { name: 'JavaScript', level: 80, icon: Code, color: 'from-yellow-400 to-yellow-600' },
+    { name: 'Node.js', level: 70, icon: Database, color: 'from-green-400 to-green-600' }
+  ];
+
+  const certificates = [
+    {
+      id: 1,
+      title: 'Webdesign',
+      issuer: 'alfatraining',
+      date: '19.08.2024',
+      number: '137173',
+      description: 'Webdesign und Frontend-Entwicklung',
+      note: '8 Wochen Vollzeitunterricht',
+      image: '/src/assets/certificates/Screenshot S1 copy.png',
+      color: 'from-orange-500 to-red-500'
+    },
+    {
+      id: 2,
+      title: 'JavaScript & AJAX',
+      issuer: 'alfatraining',
+      date: '14.10.2024',
+      number: '142068',
+      description: 'JavaScript-Programmierung und AJAX-Technologien',
+      note: '8 Wochen Vollzeitunterricht',
+      image: '/src/assets/certificates/Screenshot S2 copy.png',
+      color: 'from-yellow-500 to-orange-500'
+    },
+    {
+      id: 3,
       title: 'JavaScript Bibliothek',
-    { name: 'Node.js', level: 70, icon: Database, color: 'from-green-400 to-green-600' },
+      issuer: 'alfatraining',
       date: '09.12.2024',
       number: '145009',
       description: 'JavaScript-Bibliotheken und Frameworks',
       note: '8 Wochen Vollzeitunterricht',
+      image: '/src/assets/certificates/Screenshot S1 copy.png',
+      color: 'from-blue-500 to-purple-500'
+    },
+    {
+      id: 4,
+      title: 'Java-Entwickler',
+      issuer: 'alfatraining',
+      date: '13.01.2025',
+      number: '150166',
+      description: 'Objektorientierte Programmierung mit Java',
+      note: '8 Wochen Vollzeitunterricht',
+      image: '/src/assets/certificates/Screenshot S2 copy.png',
+      color: 'from-red-500 to-pink-500'
+    },
+    {
+      id: 5,
+      title: 'Programmierung Grundlagen',
+      issuer: 'SoftUni',
       date: '11.10.2024',
       institution: 'alfatraining',
       degree: 'Frontend-Entwickler Zertifikat',
       period: '2024',
-      image: '/src/assets/certificates/Screenshot S1 copy.png',
-      title: 'Java-Entwickler',
-    },
-      date: '13.01.2025',
-      institution: 'SoftUni',
-      degree: 'Programmierung Grundlagen',
-      note: '8 Wochen Vollzeitunterricht',
       description: 'Umfassende Grundlagen der Programmierung mit Fokus auf Webentwicklung und Softwareentwicklungsprinzipien.',
       number: '142068',
+      color: 'from-green-500 to-teal-500'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Python Programmierung',
       issuer: 'alfatraining',
       date: '10.03.2025',
@@ -1017,6 +1057,7 @@ const App = () => {
 
       {/* Footer */}
       <footer className="py-8 border-t border-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Meine Zertifikate</h2>
           <p className="text-gray-400">
             © 2024 Nikolay Stoyanov. Alle Rechte vorbehalten.
