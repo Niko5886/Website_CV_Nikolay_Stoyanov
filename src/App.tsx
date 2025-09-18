@@ -820,15 +820,6 @@ const App = () => {
                   Frameworks
                 </span>
               </div>
-              <a
-                href="/certificates/Zertifikat_145009_JavaScript_Bibliothek_20241209.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
-              >
-                <span className="mr-2">Zertifikat ansehen</span>
-                <ExternalLink size={16} />
-              </a>
             </div>
 
             {/* Java Certificate */}
