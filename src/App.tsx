@@ -159,7 +159,7 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
-              Hallo, ich bin Nikolay Stoyanov
+              Nikolay Stoyanov
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8">
               Junior Frontend-Entwickler
