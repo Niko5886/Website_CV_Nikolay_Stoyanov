@@ -46,76 +46,25 @@ const App = () => {
     { name: 'HTML5', level: 90, icon: Code, color: 'from-orange-400 to-red-500' },
     { name: 'CSS3', level: 85, icon: Palette, color: 'from-blue-400 to-blue-600' },
     { name: 'JavaScript', level: 80, icon: Code, color: 'from-yellow-400 to-yellow-600' },
-    { name: 'Node.js', level: 70, icon: Database, color: 'from-green-400 to-green-600' }
+    { name: 'React', level: 75, icon: Code, color: 'from-cyan-400 to-blue-500' },
+    { name: 'Node.js', level: 70, icon: Database, color: 'from-green-400 to-green-600' },
+    { name: 'Git', level: 85, icon: Code, color: 'from-gray-400 to-gray-600' }
   ];
 
-  const certificates = [
+  const education = [
     {
-      id: 1,
-      title: 'Webdesign',
-      issuer: 'alfatraining',
-      date: '19.08.2024',
-      number: '137173',
-      description: 'Webdesign und Frontend-Entwicklung',
-      note: '8 Wochen Vollzeitunterricht',
-      image: '/src/assets/certificates/Screenshot S1 copy.png',
-      color: 'from-orange-500 to-red-500'
-    },
-    {
-      id: 2,
-      title: 'JavaScript & AJAX',
-      issuer: 'alfatraining',
-      date: '14.10.2024',
-      number: '142068',
-      description: 'JavaScript-Programmierung und AJAX-Technologien',
-      note: '8 Wochen Vollzeitunterricht',
-      image: '/src/assets/certificates/Screenshot S2 copy.png',
-      color: 'from-yellow-500 to-orange-500'
-    },
-    {
-      id: 3,
-      title: 'JavaScript Bibliothek',
-      issuer: 'alfatraining',
-      date: '09.12.2024',
-      number: '145009',
-      description: 'JavaScript-Bibliotheken und Frameworks',
-      note: '8 Wochen Vollzeitunterricht',
-      image: '/src/assets/certificates/Screenshot S1 copy.png',
-      color: 'from-blue-500 to-purple-500'
-    },
-    {
-      id: 4,
-      title: 'Java-Entwickler',
-      issuer: 'alfatraining',
-      date: '13.01.2025',
-      number: '150166',
-      description: 'Objektorientierte Programmierung mit Java',
-      note: '8 Wochen Vollzeitunterricht',
-      image: '/src/assets/certificates/Screenshot S2 copy.png',
-      color: 'from-red-500 to-pink-500'
-    },
-    {
-      id: 5,
-      title: 'Programmierung Grundlagen',
-      issuer: 'SoftUni',
-      date: '11.10.2024',
       institution: 'alfatraining',
       degree: 'Frontend-Entwickler Zertifikat',
       period: '2024',
-      description: 'Umfassende Grundlagen der Programmierung mit Fokus auf Webentwicklung und Softwareentwicklungsprinzipien.',
-      number: '142068',
-      color: 'from-green-500 to-teal-500'
+      description: 'Intensive Ausbildung in modernen Frontend-Technologien einschließlich React, JavaScript und responsive Webdesign.',
+      skills: ['React', 'JavaScript ES6+', 'HTML5/CSS3', 'Responsive Design']
     },
     {
-      id: 6,
-      title: 'Python Programmierung',
-      issuer: 'alfatraining',
-      date: '10.03.2025',
-      number: '153269',
-      description: 'Programmierung mit Python',
-      note: '4 Wochen Vollzeitunterricht',
-      image: '/src/assets/certificates/Screenshot S2 copy.png',
-      color: 'from-purple-500 to-indigo-500'
+      institution: 'SoftUni',
+      degree: 'Programmierung Grundlagen',
+      period: '2023-2024',
+      description: 'Umfassende Grundlagen der Programmierung mit Fokus auf Webentwicklung und Softwareentwicklungsprinzipien.',
+      skills: ['Programmierlogik', 'Algorithmen', 'Datenstrukturen', 'Problemlösung']
     }
   ];
 
@@ -693,249 +642,6 @@ const App = () => {
         </div>
       </section>
 
-      {/* Certificates Section */}
-      <section id="certificates" className="py-20 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Back to Top Button */}
-          <div className="flex justify-end mb-8">
-            <button
-              onClick={scrollToTop}
-              className="p-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full hover:from-cyan-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-cyan-500/25 group"
-              title="Zurück nach oben"
-            >
-              <ArrowUp size={20} className="text-white group-hover:animate-bounce" />
-            </button>
-          </div>
-
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-              Zertifikate
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto rounded-full"></div>
-            <p className="text-xl text-gray-300 mt-6">
-              Meine beruflichen Qualifikationen und Zertifizierungen
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Webdesign Certificate */}
-            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all duration-300 transform hover:scale-105 group">
-              <div className="flex items-center justify-between mb-4">
-                <div className="p-3 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg group-hover:scale-110 transition-transform duration-300">
-                  <Award size={24} className="text-white" />
-                </div>
-                <span className="text-sm text-gray-400">2024</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Webdesign</h3>
-              <p className="text-gray-300 mb-4 text-sm">
-                Zertifikat für Webdesign und Frontend-Entwicklung
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-2 py-1 bg-orange-500/20 border border-orange-500/30 rounded text-xs text-orange-300">
-                  HTML5
-                </span>
-                <span className="px-2 py-1 bg-orange-500/20 border border-orange-500/30 rounded text-xs text-orange-300">
-                  CSS3
-                </span>
-                <span className="px-2 py-1 bg-orange-500/20 border border-orange-500/30 rounded text-xs text-orange-300">
-                  Responsive Design
-                </span>
-              </div>
-              <a
-                href="/certificates/Zertifikat_137173_Webdesign_20240819.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
-              >
-                <span className="mr-2">Zertifikat ansehen</span>
-                <ExternalLink size={16} />
-              </a>
-            </div>
-
-            {/* JavaScript Certificate */}
-            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all duration-300 transform hover:scale-105 group">
-              <div className="flex items-center justify-between mb-4">
-                <div className="p-3 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-lg group-hover:scale-110 transition-transform duration-300">
-                  <Award size={24} className="text-white" />
-                </div>
-                <span className="text-sm text-gray-400">2024</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">JavaScript & AJAX</h3>
-              <p className="text-gray-300 mb-4 text-sm">
-                Fortgeschrittene JavaScript-Programmierung und AJAX-Technologien
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-2 py-1 bg-yellow-500/20 border border-yellow-500/30 rounded text-xs text-yellow-300">
-                  JavaScript ES6+
-                </span>
-                <span className="px-2 py-1 bg-yellow-500/20 border border-yellow-500/30 rounded text-xs text-yellow-300">
-                  AJAX
-                </span>
-                <span className="px-2 py-1 bg-yellow-500/20 border border-yellow-500/30 rounded text-xs text-yellow-300">
-                  DOM Manipulation
-                </span>
-              </div>
-              <a
-                href="/certificates/Zertifikat_142068_Javascript_Ajax_(8)_20241014.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
-              >
-                <span className="mr-2">Zertifikat ansehen</span>
-                <ExternalLink size={16} />
-              </a>
-            </div>
-
-            {/* JavaScript Libraries Certificate */}
-            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all duration-300 transform hover:scale-105 group">
-              <div className="flex items-center justify-between mb-4">
-                <div className="p-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg group-hover:scale-110 transition-transform duration-300">
-                  <Award size={24} className="text-white" />
-                </div>
-                <span className="text-sm text-gray-400">2024</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">JavaScript Bibliotheken</h3>
-              <p className="text-gray-300 mb-4 text-sm">
-                Spezialisierung auf JavaScript-Frameworks und -Bibliotheken
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-2 py-1 bg-blue-500/20 border border-blue-500/30 rounded text-xs text-blue-300">
-                  React
-                </span>
-                <span className="px-2 py-1 bg-blue-500/20 border border-blue-500/30 rounded text-xs text-blue-300">
-                  jQuery
-                </span>
-                <span className="px-2 py-1 bg-blue-500/20 border border-blue-500/30 rounded text-xs text-blue-300">
-                  Frameworks
-                </span>
-              </div>
-              <a
-                href="/certificates/Zertifikat_145009_JavaScript_Bibliothek_20241209.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
-              >
-                <span className="mr-2">Zertifikat ansehen</span>
-                <ExternalLink size={16} />
-              </a>
-            </div>
-
-            {/* Java Certificate */}
-            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all duration-300 transform hover:scale-105 group">
-              <div className="flex items-center justify-between mb-4">
-                <div className="p-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-lg group-hover:scale-110 transition-transform duration-300">
-                  <Award size={24} className="text-white" />
-                </div>
-                <span className="text-sm text-gray-400">2025</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Java OOP</h3>
-              <p className="text-gray-300 mb-4 text-sm">
-                Objektorientierte Programmierung mit Java
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-2 py-1 bg-red-500/20 border border-red-500/30 rounded text-xs text-red-300">
-                  Java
-                </span>
-                <span className="px-2 py-1 bg-red-500/20 border border-red-500/30 rounded text-xs text-red-300">
-                  OOP
-                </span>
-                <span className="px-2 py-1 bg-red-500/20 border border-red-500/30 rounded text-xs text-red-300">
-                  Algorithmen
-                </span>
-              </div>
-              <a
-                href="/certificates/Zertifikat_150166_JAVA_20250113.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
-              >
-                <span className="mr-2">Zertifikat ansehen</span>
-                <ExternalLink size={16} />
-              </a>
-            </div>
-
-            {/* Python Certificate */}
-            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all duration-300 transform hover:scale-105 group">
-              <div className="flex items-center justify-between mb-4">
-                <div className="p-3 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg group-hover:scale-110 transition-transform duration-300">
-                  <Award size={24} className="text-white" />
-                </div>
-                <span className="text-sm text-gray-400">2025</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Python</h3>
-              <p className="text-gray-300 mb-4 text-sm">
-                Python-Programmierung und Datenanalyse
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-2 py-1 bg-green-500/20 border border-green-500/30 rounded text-xs text-green-300">
-                  Python
-                </span>
-                <span className="px-2 py-1 bg-green-500/20 border border-green-500/30 rounded text-xs text-green-300">
-                  Data Analysis
-                </span>
-                <span className="px-2 py-1 bg-green-500/20 border border-green-500/30 rounded text-xs text-green-300">
-                  Automation
-                </span>
-              </div>
-              <a
-                href="/certificates/Zertifikat_153269_Python_20250310.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
-              >
-                <span className="mr-2">Zertifikat ansehen</span>
-                <ExternalLink size={16} />
-              </a>
-            </div>
-
-            {/* Additional Certificate Placeholder */}
-            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all duration-300 transform hover:scale-105 group">
-              <div className="flex items-center justify-between mb-4">
-                <div className="p-3 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg group-hover:scale-110 transition-transform duration-300">
-                  <Award size={24} className="text-white" />
-                </div>
-                <span className="text-sm text-gray-400">2024</span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Weitere Zertifikate</h3>
-              <p className="text-gray-300 mb-4 text-sm">
-                Zusätzliche Qualifikationen und Weiterbildungen
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-2 py-1 bg-indigo-500/20 border border-indigo-500/30 rounded text-xs text-indigo-300">
-                  Continuous Learning
-                </span>
-                <span className="px-2 py-1 bg-indigo-500/20 border border-indigo-500/30 rounded text-xs text-indigo-300">
-                  Professional Development
-                </span>
-              </div>
-              <span className="text-gray-400 text-sm">
-                Weitere Zertifikate in Vorbereitung
-              </span>
-            </div>
-          </div>
-
-          {/* Certificate Stats */}
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-cyan-400 mb-2">5+</div>
-              <div className="text-gray-300">Zertifikate</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-purple-400 mb-2">2</div>
-              <div className="text-gray-300">Institutionen</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-cyan-400 mb-2">500+</div>
-              <div className="text-gray-300">Lernstunden</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-purple-400 mb-2">100%</div>
-              <div className="text-gray-300">Erfolgsrate</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
       <section id="contact" className="py-20 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1058,7 +764,6 @@ const App = () => {
       {/* Footer */}
       <footer className="py-8 border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Meine Zertifikate</h2>
           <p className="text-gray-400">
             © 2024 Nikolay Stoyanov. Alle Rechte vorbehalten.
           </p>
