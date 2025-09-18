@@ -853,16 +853,7 @@ const App = () => {
                 <span className="px-2 py-1 bg-red-500/20 border border-red-500/30 rounded text-xs text-red-300">
                   Algorithmen
                 </span>
-              </div>
-              <a
-                href="/certificates/Zertifikat_150166_JAVA_20250113.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
-              >
-                <span className="mr-2">Zertifikat ansehen</span>
-                <ExternalLink size={16} />
-              </a>
+              </div>              
             </div>
 
             {/* Python Certificate */}
