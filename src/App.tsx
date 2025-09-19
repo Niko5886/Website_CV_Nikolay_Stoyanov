@@ -253,20 +253,6 @@ const App = () => {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full font-semibold hover:from-cyan-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/25"
-            >
-              Kontaktiere mich
-            </button>
-            <button
-              onClick={() => scrollToSection('about')}
-              className="px-8 py-3 border border-cyan-500 rounded-full font-semibold hover:bg-cyan-500/10 transition-all duration-300 transform hover:scale-105"
-            >
-              Mehr erfahren
-            </button>
-          </div>
         </div>
       </section>
 
