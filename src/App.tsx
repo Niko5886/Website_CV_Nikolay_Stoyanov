@@ -1,22 +1,5 @@
 import React, { useState } from 'react';
-import { 
-  User, 
-  Code, 
-  Briefcase, 
-  Mail, 
-  Github, 
-  Linkedin, 
-  ExternalLink,
-  ChevronDown,
-  Award,
-  Calendar,
-  MapPin,
-  Phone,
-  Download,
-  Star,
-  Trophy,
-  Certificate
-} from 'lucide-react';
+import { User, Code, Briefcase, Mail, Github, Linkedin, ExternalLink, ChevronDown, Award, Calendar, MapPin, Phone, Download, Star, Trophy, AlignCenterVertical as Certificate } from 'lucide-react';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('about');
