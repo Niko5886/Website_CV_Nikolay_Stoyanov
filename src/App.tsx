@@ -230,9 +230,7 @@ const App = () => {
             <p className="text-xl md:text-2xl text-gray-300 mb-8">
               Junior Frontend-Entwickler
             </p>
-            <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-12">
-              Leidenschaftlich für die Erstellung schöner, funktionaler und benutzerfreundlicher Webanwendungen mit modernen Technologien.
-            </p>
+
           </div>
 
           {/* 3D Floating Code Block */}
