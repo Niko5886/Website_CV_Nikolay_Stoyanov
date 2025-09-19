@@ -172,6 +172,7 @@ const App = () => {
                 { name: 'Über mich', id: 'about' },
                 { name: 'Fähigkeiten', id: 'skills' },
                 { name: 'Bildung', id: 'education' },
+                { name: 'Zertifikate', id: 'certificates' },
                 { name: 'Kontakt', id: 'contact' }
               ].map((item) => (
                 <button
@@ -203,6 +204,7 @@ const App = () => {
                 { name: 'Über mich', id: 'about' },
                 { name: 'Fähigkeiten', id: 'skills' },
                 { name: 'Bildung', id: 'education' },
+                { name: 'Zertifikate', id: 'certificates' },
                 { name: 'Kontakt', id: 'contact' }
               ].map((item) => (
                 <button
